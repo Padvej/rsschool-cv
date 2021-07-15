@@ -17,6 +17,8 @@ Heating, Ventilation, Air Conditioning (HVAC)
 `2008-09`
 **Belarusian National Technical University**
 Master of Engineering (M.Eng)
+`2021 – Currently`
+Studying at JS/FE Pre-School courses
 
 ## WORK EXPERIENCE
 
@@ -34,12 +36,6 @@ Chief HVAC Engineer: SPEС-KLIMAT LCC (HVAC design and consulting company)
 - English: pre-intermediate
 - Russian: native speaker
 - Belarusian: native speaker
-
-## Technical skills
-
--
--
--
 
 ## Areas of expertise
 
