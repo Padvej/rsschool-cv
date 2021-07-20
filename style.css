@@ -1,21 +1,71 @@
 body {
-  font-family: Arial, Verdana, sans-serif; /* Семейство шрифтов */
-  font-size: 11pt; /* Размер основного шрифта в пунктах  */
-  background-color: #f0f0f0; /* Цвет фона веб-страницы */
-  color: #333; /* Цвет основного текста */
+  background-color: #a2a2a2;
+  color: #4e4544;
+  font: normal 16px sans-serif;
 }
-h1 {
-  color: #a52a2a; /* Цвет заголовка */
-  font-size: 24pt; /* Размер шрифта в пунктах */
-  font-family: Georgia, Times, serif; /* Семейство шрифтов */
-  font-weight: normal; /* Нормальное начертание текста  */
+
+/* Page Layout */
+
+.container {
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "main sidebar"
+    "footer footer";
+  grid-gap: 60px;
 }
-p {
-  text-align: justify; /* Выравнивание по ширине */
-  margin-left: 60px; /* Отступ слева в пикселах */
-  margin-right: 10px; /* Отступ справа в пикселах */
-  border-left: 1px solid #999; /* Параметры линии слева */
-  border-bottom: 1px solid #999; /* Параметры линии снизу */
-  padding-left: 10px; /* Отступ от линии слева до текста  */
-  padding-bottom: 10px; /* Отступ от линии снизу до текста  */
+
+/* Main Section */
+
+.main {
+  grid-area: main;
+
+  text-align: left;
+  margin: 10px;
+}
+
+.main img {
+  width: 100%;
+}
+
+/* Sidebar */
+
+.sidebar {
+  grid-area: sidebar;
+
+  border: 1px solid #a2a2a2;
+  padding: 5px;
+  margin: 10px;
+}
+
+/* Footer */
+
+footer {
+  grid-area: footer;
+
+  color: #ef5350;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  color: #777;
+  font-size: 12px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    /*  Redefine the grid into a single column layout. */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "sidebar"
+      "footer";
+  }
 }
